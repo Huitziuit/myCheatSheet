@@ -1,0 +1,83 @@
+-SETUP
+
+git config --global user.name "[name]"
+git config --global user.email "[email]"
+git config --global core.editor [editor emacs]
+git config --list
+-----------------------------------------------------------------
+-IGNORE
+.gitignore 
+*.[typeFile]		//ignore files.[typeFile]
+![file.typeFile]	//dont ignore [file.typeFile]
+[dir]/			//ignore all files in [dir]
+[dir]/*.[typeFile]	//ignore [dir]/files.[typeFile]
+			//not ignore [dir]/dir2/files.[typeFile]
+[dir]/**/*.[typeFile]	//ignore all files.[typeFile] recursively
+	
+------------------------------------------------------------------
+-INIT
+
+echo "# myCheatSheet" >> README.md
+git init
+git clone [url]
+-----------------------------------------------------------------
+-STAGE
+
+git status
+git add [file]
+git diff             //diff of what is changed but not staged
+git diff --staged    //diff of what is staged but not yet commited
+
+------------------------------------------------------------------
+COMMITS
+
+git commit -m "[descriptive message]"
+git --amend	//replace previous commit 
+---------------------------------------------------------------------
+-HISTORY
+
+git log		//show all commits in the current branch's history
+	--oneline	//7 digits of hash and commit in one line
+	-p	//show changes of each of the commits 
+	-2	//show two last commits
+	--stat	//show statics 
+	--graph //show graphics of braches in history
+
+---------------------------------------------------------------------
+-RECOVERY
+
+git checkout -- [file]	//recovery file to its state in the last commit
+ 
+---------------------------------------------------------------------
+-REMOTS (default origin)
+
+git remote -v			//list of remots
+git remote show [nameRemote]	//inspect a remote
+git add [nameRemote] [url]	//add remote
+git remote rename [nameRemote] [newNameRemote]	//rename remote
+git remote rm [nameRemote]	//delete remote
+
+git fetch [nameRemote]		// fetch toward [nameRemote] 
+
+git clone [url]		//by default syncs the master branch of the 
+			//local repo with the remote repo
+
+git push [nameRemote] [nameBranch]	//send to my remote
+
+---------------------------------------------------------------------
+-TAGS
+
+[version]				//the format is v0.1 v1.3 v1.4-lw
+git tag [version]			//lightweight tag 
+git tag -a [version] -m "[message]"	//annotated tag, more info 
+git show [version]			//show info of version
+git tag -a [version] [oneline]		//late tagging
+
+//default, push does not transfer tags to remote servers 
+git push [remote] [version] --tags	//send all tags to remote server
+
+git checkout -b [newBranch] [version]	//set a place version in the 
+					//workArea, this is only 
+					//possible whith a new branch 
+
+
