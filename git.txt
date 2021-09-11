@@ -81,3 +81,7 @@ git checkout -b [newBranch] [version]	//set a place version in the
 					//possible whith a new branch 
 
 
+-----------------------------------------------------------------------
+-ALIAS
+git config --global alias.[alias] [gitCommant]
+example: git config --global alias.st status
