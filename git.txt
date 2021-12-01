@@ -85,3 +85,38 @@ git checkout -b [newBranch] [version]	//set a place version in the
 -ALIAS
 git config --global alias.[alias] [gitCommant]
 example: git config --global alias.st status
+
+-----------------------------------------------------------------------
+-BRANCH
+git branch 			//show my branches
+git branch [newBranch]		//create a new branch
+git branch -d [branch]		//delete a branch
+git checkout [branch]		//jump to [branch]		pointer HEAD -> [branch]
+git checkout [branch] -b 	//resume 2 lines up (creaate and jump to new branch)
+
+
+it log --oneline --decorate --graph --all	//all branches on history 
+--------------------------------------------------------------------------
+-MERGE
+ //to make a merge 
+git branch [brach] //main,master 	//	1. jump to branch base
+git merge [branch] 			//	2. merge an external branch
+
+HEAD<<<<				//	3. solve conflicts
+content1
+============
+branchExternal>>>>>
+content2
+...
+===========
+
+git branch --merged 		//show branches merged with active branch
+[branch1]
+[branch2]
+[branchN]
+*[activeBranch]
+
+git branch --no.merged		//show branches Non merged with active branch
+[branch1]
+[branchN]
+
