@@ -96,6 +96,18 @@ git checkout [branch] -b 	//resume 2 lines up (creaate and jump to new branch)
 
 
 it log --oneline --decorate --graph --all	//all branches on history 
+
+git branch -v 			//all branches and last commint for each one
+
+git branch --merged 		//show branches merged with active branch
+[branch1]
+[branch2]
+[branchN]
+*[activeBranch]
+
+git branch --no.merged		//show branches Non merged with active branch
+[branch1]
+[branchN]
 --------------------------------------------------------------------------
 -MERGE
  //to make a merge 
@@ -119,4 +131,32 @@ git branch --merged 		//show branches merged with active branch
 git branch --no.merged		//show branches Non merged with active branch
 [branch1]
 [branchN]
+-----------------------------------------------------------------------------
+-FETCH 
+git fetch [remote]					//Update remote branches info [remote]/[masterBranch] example: origin/master
+git fetch --all						//Update all remotes info
 
+//git fetch returns server branches but this branches are no editables
+git merge [remote]/[remoteBranch]			//for merge localBranch with remote branches example: git merge origin/test
+git checkout -b nameNewBranch [remote]/[remoteBranch]		//make a branch based in remote branch (this branch can edit)
+
+
+-----------------------------------------------------------------------------
+-PUBLISH
+git push [remote] [branch]	//publish local brach with remote branch, (make and update) or (onli update) remote branch
+git push [remote] [branch:branch]	//equals to up line
+
+git push [remote] [localBranch:remoteBranch] 	//when local and remote branch use diferent name 
+
+-----------------------------------------------------------------------------
+-Follow to the Branches (Remote branches)
+git checkout -b nameNewBranch [remote]/[remoteBranch]		//make a local branch based in remote branch (this local branch can edit and syncronous with remote branch)
+git checkout --track [origin]/[remoteBranch]	//equal to up line, if local and remote name of the branches is the same
+
+//if i have a local branch and i like connect (syncronize) local branch with a remote branch (-u or --set-upstream-to configure you local branch) 
+git branch -u [remote]/[remoteBranch]			//make or update remote branch, and syncronize local and remote branch  
+
+git fetch --all						//Update all remotes info
+git branch -vv						//Show branches and and show who you follow
+
+git push [remote] --delete [remoteBranch]
