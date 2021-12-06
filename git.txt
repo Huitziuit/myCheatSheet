@@ -160,3 +160,23 @@ git fetch --all						//Update all remotes info
 git branch -vv						//Show branches and and show who you follow
 
 git push [remote] --delete [remoteBranch]
+
+-----------------------------------------------------------------------------
+-REBASE 
+
+git rebase [baseBranch]
+
+//1. set externalBranch
+//2. rebase with baseBranch
+//3. Change a baseBranch 
+//4. Merge with externalBranch (rebase)
+
+//example 
+git checkout experiment
+git rebase master
+git checkout master
+git merge experiment
+
+NEVER USE REBASE ON PUBLIC REPOSITORY
+
+-----------------------------------------------------------------------------
