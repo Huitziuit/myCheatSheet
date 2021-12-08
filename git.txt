@@ -154,7 +154,7 @@ git checkout -b nameNewBranch [remote]/[remoteBranch]		//make a local branch bas
 git checkout --track [origin]/[remoteBranch]	//equal to up line, if local and remote name of the branches is the same
 
 //if i have a local branch and i like connect (syncronize) local branch with a remote branch (-u or --set-upstream-to configure you local branch) 
-git branch -u [remote]/[remoteBranch]			//make or update remote branch, and syncronize local and remote branch  
+git push -u [remote] [remoteBranch]			//make or update remote branch, and syncronize local and remote branch  
 
 git fetch --all						//Update all remotes info
 git branch -vv						//Show branches and and show who you follow
