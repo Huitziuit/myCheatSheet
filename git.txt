@@ -98,6 +98,8 @@ git checkout [branch] -b 	//resume 2 lines up (creaate and jump to new branch)
 it log --oneline --decorate --graph --all	//all branches on history 
 
 git branch -v 			//all branches and last commint for each one
+git branch -a 			//all local and remote branches
+git branch -r 			//only remote branches
 
 git branch --merged 		//show branches merged with active branch
 [branch1]
@@ -158,6 +160,7 @@ git push -u [remote] [remoteBranch]			//make or update remote branch, and syncro
 
 git fetch --all						//Update all remotes info
 git branch -vv						//Show branches and and show who you follow
+git branch -a						//local and remote branches
 
 git push [remote] --delete [remoteBranch]
 
