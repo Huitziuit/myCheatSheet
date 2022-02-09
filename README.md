@@ -1,31 +1,23 @@
-# Quick Note
+# Reading List
 
-Quickly create a rich document.
+<aside>
+📚 The modern day reading list includes more than just books. We've created a dashboard to help you track books, articles, podcasts, and videos. **Each** **media type** has its own view based on the **Type** property. 
 
-# Jot down some text
+Change your views to sort content by status, author, type, or publisher ✓
+Rate content out of 5 stars ✓
 
----
+</aside>
 
-They found Mary, as usual, deep in the study of thorough-bass and human nature; and had some extracts to admire, and some new observations of threadbare morality to listen to. Catherine and Lydia had information for them of a different sort.
+<aside>
+✂️ One more thing... if you install [Notion Web Clipper](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?hl=en), you can save pages and links off the web directly to these lists.
 
-# Make a to-do list
+</aside>
 
----
+<aside>
+👇 Click on `Articles` to see what other views might have in store or add your own ✨
 
-- [ ]  Wake up
-- [ ]  Eat breakfast
-- [x]  Brush teeth
+</aside>
 
-# Create sub-pages
+[Media](https://www.notion.so/a08678a067864bab891ea053e7236f20)
 
----
-
-[Sub Page](Quick%20Note%201f7ade0db46744f29c18c559166792b0/Sub%20Page%2090c5693e7b0e40d3b8582b7e1423cb36.md)
-
-# Embed links
-
----
-
-[Beyond Frank Lloyd Wright: A Broader View of Art in Chicago](https://www.nytimes.com/2018/03/08/arts/chicago-museums-art.html?rref=collection%2Fsectioncollection%2Ftravel)
-
-[Havana's Symphony of Sound](https://www.nytimes.com/2018/03/12/travel/havana-cuba.html?rref=collection%2Fsectioncollection%2Ftravel)
+![https://images.unsplash.com/photo-1557149769-d376acfba1f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb](https://images.unsplash.com/photo-1557149769-d376acfba1f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)
